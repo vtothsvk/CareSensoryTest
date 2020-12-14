@@ -3,11 +3,15 @@
 #include <VL53L0X.h>
 #include "care_pinout.h"
 
+/** Sensor select directives
+ * 
+ *  @note select only one
+ */
 #define _PIR
 //#define _FSR
 //#define _TOF
 //#define _LIGHT
-#define _BME
+//#define _BME
 
 void update();
 void printout();
