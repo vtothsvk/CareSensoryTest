@@ -25,12 +25,12 @@ Adafruit_BME680 bme;
 #endif
 
 bool motion;
-uint16_t smoke, light, distance, pressure;
+uint16_t light, distance, pressure;
 float temp, hum, aPressure, smoke;
 
 void setup() {
     Serial.begin(115200);
-    Serial.printf("AP Care Sensory Test begin")
+    Serial.printf("AP Care Sensory Test begin");
 
     Wire.begin();
 
@@ -51,7 +51,7 @@ void setup() {
 void loop() {
     update();
     printout();
-    delay(500)
+    delay(500);
 }//loop
 
 void update() {
